@@ -22,7 +22,7 @@
       "key":"LoginMask\\Containers\\LoginMaskContainer",
       "name":"LoginMask Assets",
       "description":"",
-      "defaultLayoutContainer": "Ceres::PageDesign.AfterOpeningBodyTag"
+      "defaultLayoutContainer": "Ceres::Template.Style"
     }
   ]
 }

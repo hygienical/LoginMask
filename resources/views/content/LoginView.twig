@@ -14,7 +14,7 @@
                         <p>{{ trans("LoginMask::LoginMask.LoginMaskLogin") }}</p>
                         <login backlink="{{ backlink | url_encode }}" :has-to-forward="true"></login>
                         <div class="mt-3">
-                            {% if expressbtn == active %}
+                            {% if expressbtn == "active" %}
                             <hr class="inner-hr"><span class="inner-hr-caption">{{ trans("LoginMask::LoginMask.LoginOr") }}</span>
                             {{ LayoutContainer.show("Ceres::Login.AdditionalContentAfterButtons") }}
                             {% else %}

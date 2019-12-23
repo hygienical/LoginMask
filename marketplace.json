@@ -1,0 +1,8 @@
+{
+  "marketplaceName"   :{"de": "LoginMask","en": "LoginMask"},
+  "license"           :"Copyright by Marktplatz-Experten.de",
+  "price"             : 0,
+  "shortDescription"  :{"de": "","en": ""},
+  "categories"        :["3527"],
+  "keywords"          :["marktplatz-experten", "plugins", "container"]
+}

@@ -1,0 +1,28 @@
+{
+  "version"           :"1.0.0",
+  "isClosedSource"    :false,
+  "name"              :"LoginMask",
+  "license"           :"Copyright by Marktplatz-Experten.de",
+  "description"       :"",
+  "namespace"         :"LoginMask",
+  "marketplaceName"   :{"de": "🎅🏽 LoginMask","en": "🎅🏽 LoginMask"},
+  "categories"        :["3527"],
+  "author"            :"Marktplatz-Experten.de",
+  "shortDescription"  :{"de": ".","en": ""},
+  "pluginIcon"        :"icon_plugin_xs.png",
+  "authorIcon"        :"icon_author_xs.png",
+  "email"             :"info@marktplatz-experten.de",
+  "keywords"          :["marktplatz-experten", "plugins", "container", "login", "design", "template"],
+  "type"              :"general",
+  "require"           :[],
+  "serviceProvider"   :"LoginMask\\Providers\\LoginMaskServiceProvider",
+  "dataProviders"     :
+  [
+    {
+      "key":"LoginMask\\Containers\\LoginMaskContainer",
+      "name":"LoginMask Assets",
+      "description":"",
+      "defaultLayoutContainer": "Ceres::PageDesign.AfterOpeningBodyTag"
+    }
+  ]
+}

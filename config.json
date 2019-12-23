@@ -1,0 +1,47 @@
+{ 
+   "formatVersion":1,
+   "menu":{ 
+      "Config.design":{ 
+         "label":"Config.settings",
+         "formFields":{ 
+            "global.container1":{ 
+               "type":"verticalContainer",
+               "label":"Config.globalContainerLabel1",
+               "options":{ 
+                  "containerEntries":{ 
+                     "LoginMask.expressbtn":{ 
+                        "type": "selectBox",
+                        "required": false,
+                        "label": "Config.expressbtn",
+                        "options": {
+                           "defaultValue": "active",
+                           "selectBoxValues": [
+                              {
+                                 "value": "active",
+                                 "caption": "Config.active"
+                              },
+                              {
+                                 "value": "inactive",
+                                 "caption": "Config.inactive"
+                              }
+                           ]
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      },
+      "Config.customcsshead":{ 
+         "label":"Config.customcsshead",
+         "formFields":{ 
+            "LoginMask.customcss1":{ 
+               "type":"inputTextArea",
+               "scss":false,
+               "key":"LoginMask.customcss1",
+               "label":"Config.customcss"
+            }
+         }
+      }
+   }
+}

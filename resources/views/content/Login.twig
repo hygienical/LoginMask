@@ -24,12 +24,12 @@
                 </div>
             </div>
             <div :class="{'modal-footer justify-content-between': modalElement, 'row': !modalElement}">
-                <div class="col-12">
+                <div class="col-6" :class="{'col-12': !modalElement}">
                     <a href="javascript:void(0)" @click="showResetPwdView" class="text-appearance">{{ trans("Ceres::Template.loginForgotPassword") }}?</a>
                 </div>
-                <div class="col-12">
+                <div class="col-6" :class="{'col-12': !modalElement}">
                     {{ LayoutContainer.show("Ceres::LoginOverlay.ExtendOverlayButtons") }}
-                    <button @click.prevent="validateLogin" :disabled="isDisabled" class="btn btn-primary btn-lg btn-block btn-appearance mt-3">
+                    <button @click.prevent="validateLogin" :disabled="isDisabled" class="btn btn-primary btn-block btn-appearance" :class="{'btn btn-primary btn-lg btn-block btn-appearance mt-3': !modalElement}">
                         <i class="fa fa-user" v-waiting-animation="isDisabled"></i>
                         {{ trans("Ceres::Template.login") }}
                     </button>

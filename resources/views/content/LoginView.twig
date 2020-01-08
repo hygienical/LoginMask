@@ -27,12 +27,6 @@
             <div class="col-md-6 mb-4">
                 <div id="guest-register-card" class="card h-100">
                     <div class="card-body p-5">
-                        {% if "my-account" not in backlink %}
-                            <span class="h1 d-block mb-2">{{ trans("Ceres::Template.loginOrderAsGuest") }}</span>
-                            <p>{{ trans("LoginMask::LoginMask.LoginMaskGuest") }}</p>
-                            <guest-login backlink="{{ backlink | url_encode }}" :initial-email="{{ services.sessionStorage.getSessionValue("guestEmail") | json_encode }}"></guest-login>
-                        {% endif %}
-                        <hr class="my-4">
                         <span class="h1 d-block mb-2">{{ trans("Ceres::Template.loginRegister") }}</span>
                         <p>{{ trans("LoginMask::LoginMask.LoginMaskRegister") }}</p>
                         <a class="btn btn-primary btn-lg btn-block" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">

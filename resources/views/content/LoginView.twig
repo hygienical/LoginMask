@@ -21,7 +21,7 @@
                 <div id="login-card" class="card h-100">
                     <div class="card-body p-5">
                         <span class="h1 login-view-title d-block mb-2">{{ trans("Ceres::Template.login") }}</span>
-                        <p>{{ trans("LoginMask::LoginMask.LoginMaskLogin") }} Gewerbekunden</p>
+                        <p>{{ trans("LoginMask::LoginMask.LoginMaskLogin") }}</p>
                         <login backlink="{{ backlink | url_encode }}" :has-to-forward="true"></login>
                         <div class="mt-3">
                             {% if expressbtn == "active" %}
@@ -37,8 +37,8 @@
             <div class="col-md-6 mb-4">
                 <div id="guest-register-card" class="card h-100">
                     <div class="card-body p-5">
-                        <span class="h1 d-block mb-2">{{ trans("Ceres::Template.loginRegister") }}</span>
-                        <p>{{ trans("LoginMask::LoginMask.LoginMaskRegister") }} Gewerbekunden</p>
+                        <span class="h1 d-block mb-2">{{ trans("Ceres::Template.loginRegister") }} Gewerbekunden</span>
+                        <p>{{ trans("LoginMask::LoginMask.LoginMaskRegister") }}</p>
 
                         <a class="btn btn-primary btn-lg btn-block" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
                             <i class="fa fa-user-plus" aria-hidden="true"></i>

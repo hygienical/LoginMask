@@ -13,7 +13,7 @@
                          <b>Als Privatperson können Sie in diesem Onlineshop keinerlei Waren bestellen. Alle Bestellungen die von Privatpersonen aufgegeben werden, werden ausnahmslos storniert bzw. nicht verarbeitet. Sofern Sie Verbraucher sind, bitten wie Sie daher von Bestellungen abzusehen. Hygienical behält sich das Recht vor, vor der Auftragsabwicklung Unterlagen zum Nachweis eines Gewerbes anzufordern.</b></span>                      
                          <div class="custom-control custom-checkbox mr-sm-2">
                            <input type="checkbox" id="b2b-check">
-                           <label for="same-address">Ich bin Gewerbetreibender, Unternehmer, eine juristische Personen des öffentlichen Rechts oder eine öffentliche Einrichtungen</label>
+                           <label for="same-address">Ich bin Gewerbetreibender, Unternehmer, eine juristische Person des öffentlichen Rechts oder eine öffentliche Einrichtung</label>
                          </div>	
                  </div>
             </div>
@@ -40,7 +40,7 @@
                         <span class="h1 d-block mb-2">Registrierung als Gewerbekunde</span>
                         <p>{{ trans("LoginMask::LoginMask.LoginMaskRegister") }}</p>
 
-                        <a class="btn btn-primary btn-lg btn-block b2b-cf" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
+                        <a class="btn btn-primary btn-lg btn-block b2b-cf b2b-access" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
                             <i class="fa fa-user-plus" aria-hidden="true"></i>
                             {{ trans("Ceres::Template.loginRegister") }}
                         </a>

@@ -12,9 +12,17 @@
 <script>
 $('#b2b-check:checkbox').change(function(){
     if($(this).is(":checked")) {
+    	$('#b2b-warning .title').addClass("d-none");
+    	$('#b2b-warning b').addClass("d-none");
+    	$('#b2b-warning hr').addClass("d-none");
+    	$('#b2b-warning').css("background-color", "green");
         $('.b2b-cf').removeClass("b2b-access");
         $('.b2b-cf-hide').removeClass("d-block").addClass("d-none");
     } else {
+    	$('#b2b-warning .title').removeClass("d-none");
+    	$('#b2b-warning b').removeClass("d-none");
+    	$('#b2b-warning hr').removeClass("d-none");
+    	$('#b2b-warning').css("background-color", "red");
         $('.b2b-cf').addClass("b2b-access");
         $('.b2b-cf-hide').removeClass("d-none");
     }

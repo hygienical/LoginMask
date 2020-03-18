@@ -44,15 +44,15 @@
                             <i class="fa fa-user-plus" aria-hidden="true"></i>
                             {{ trans("Ceres::Template.loginRegister") }}
                         </a>
-                        <hr>
-                        <span class="h1 d-block mb-2">Privatkunde?</span>
-                        <p>Als Privatkunde können Sie Artikel aus unserem Sortiment wahlweise über die Marktplätze Amazon sowie eBay beziehen.</p>
-                        <div class="d-flex">
-                        <a class="btn btn-primary btn-lg btn-block" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
-                            Amazon
+                        <hr style="margin-top: 2.8rem; margin-bottom: 2.8rem">
+                        <span class="h1 d-block mb-2">Ich bin Privatkunde</span>
+                        <p>Als Privatperson bzw. Verbraucher können Sie alle unsere Artikel wahlweise über die Marktplätze Amazon sowie eBay beziehen. Klicken Sie auf eine der Schaltflächen um direkt zum entsprechenden Store zu gelangen.</p>
+                        <div class="button-container d-flex">
+                        <a class="btn btn-outline-primary btn-lg btn-block" href="https://www.amazon.de/s?me=A2L053WQ90D26Z&marketplaceID=A1PA6795UKMFR9" target="_blank">
+                            Zu Amazon
                         </a>
-                        <a class="btn btn-primary btn-lg btn-block" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
-                            Amazon
+                        <a class="btn btn-outline-primary btn-lg btn-block" href="https://www.ebay.de/str/Hygienical-Betriebsbedarf" target="_blank">
+                            Zu eBay
                         </a>
                         </div>
                     </div>

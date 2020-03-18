@@ -23,7 +23,7 @@
                         <span class="h1 login-view-title d-block mb-2">Anmeldung als Gewerbekunde</span>
                         <p>{{ trans("LoginMask::LoginMask.LoginMaskLogin") }}</p>
                         <login backlink="{{ backlink | url_encode }}" :has-to-forward="true"></login>
-                        <div class="b2b-cf mt-3">
+                        <div class="b2b-cf b2b-access mt-3">
                             {% if expressbtn == "active" %}
                             <hr class="inner-hr"><span class="inner-hr-caption">{{ trans("LoginMask::LoginMask.LoginOr") }}</span>
                             {{ LayoutContainer.show("Ceres::Login.AdditionalContentAfterButtons") }}
@@ -44,7 +44,7 @@
                             <i class="fa fa-user-plus" aria-hidden="true"></i>
                             {{ trans("Ceres::Template.loginRegister") }}
                         </a>
-                        <div class="b2b-cf-hide">
+                        <div class="b2b-cf-hide b2b-access">
                         <hr style="margin-top: 2.8rem; margin-bottom: 2.8rem">
                         <span class="h1 d-block mb-2">Ich bin Privatkunde</span>
                         <p>Als Privatperson bzw. Verbraucher können Sie alle unsere Artikel wahlweise über die Marktplätze Amazon sowie eBay beziehen. Klicken Sie auf eine der Schaltflächen um direkt zum entsprechenden Store zu gelangen.</p>

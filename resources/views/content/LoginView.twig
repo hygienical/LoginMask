@@ -23,7 +23,7 @@
                         <span class="h1 login-view-title d-block mb-2">Anmeldung als Gewerbekunde</span>
                         <p>{{ trans("LoginMask::LoginMask.LoginMaskLogin") }}</p>
                         <login backlink="{{ backlink | url_encode }}" :has-to-forward="true"></login>
-                        <div class="mt-3">
+                        <div class="b2b-cf mt-3">
                             {% if expressbtn == "active" %}
                             <hr class="inner-hr"><span class="inner-hr-caption">{{ trans("LoginMask::LoginMask.LoginOr") }}</span>
                             {{ LayoutContainer.show("Ceres::Login.AdditionalContentAfterButtons") }}
@@ -40,10 +40,11 @@
                         <span class="h1 d-block mb-2">Registrierung als Gewerbekunde</span>
                         <p>{{ trans("LoginMask::LoginMask.LoginMaskRegister") }}</p>
 
-                        <a class="btn btn-primary btn-lg btn-block" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
+                        <a class="btn btn-primary btn-lg btn-block b2b-cf" href="{{ urls.registration }}{% if backlink | trim is not empty %}?backlink={{ backlink | url_encode}}{% endif %}">
                             <i class="fa fa-user-plus" aria-hidden="true"></i>
                             {{ trans("Ceres::Template.loginRegister") }}
                         </a>
+                        <div class="b2b-cf-hide">
                         <hr style="margin-top: 2.8rem; margin-bottom: 2.8rem">
                         <span class="h1 d-block mb-2">Ich bin Privatkunde</span>
                         <p>Als Privatperson bzw. Verbraucher können Sie alle unsere Artikel wahlweise über die Marktplätze Amazon sowie eBay beziehen. Klicken Sie auf eine der Schaltflächen um direkt zum entsprechenden Store zu gelangen.</p>
@@ -54,6 +55,7 @@
                         <a class="btn btn-outline-primary btn-lg btn-block mt-0" href="https://www.ebay.de/str/Hygienical-Betriebsbedarf" target="_blank">
                             <i class="fa fa-external-link" aria-hidden="true"></i> Zu eBay
                         </a>
+                        </div>
                         </div>
                     </div>
                 </div>
